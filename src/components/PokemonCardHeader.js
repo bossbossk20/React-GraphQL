@@ -1,6 +1,6 @@
 import React from 'react'
 import { propType } from 'graphql-anywhere'
-import gql from 'graphql-tag'
+import { gql } from 'react-apollo'
 import styled from 'styled-components'
 
 const Title = styled.div`

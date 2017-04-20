@@ -1,7 +1,6 @@
 import React from 'react'
-import { graphql } from 'react-apollo'
+import { graphql, gql } from 'react-apollo'
 import { withRouter } from 'react-router'
-import gql from 'graphql-tag'
 import styled from 'styled-components'
 
 import PokemonPreview from '../components/PokemonPreview'
@@ -97,7 +96,7 @@ const PokedexWithData = graphql(TrainerQuery, {
       ) || 0,
       first: POKEMONS_PER_PAGE,
     },
-    forceFetch: true,
+    fetchPolicy: 'network-only' ,
   })
 })(withRouter(Pokedex))
 

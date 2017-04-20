@@ -1,7 +1,6 @@
 import React from 'react'
 import { propType } from 'graphql-anywhere'
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import { graphql, gql } from 'react-apollo'
 import styled from 'styled-components'
 
 const Button = styled.div`
